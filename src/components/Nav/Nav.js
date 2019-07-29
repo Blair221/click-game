@@ -1,13 +1,19 @@
-import React from "react";
+import React, {Component} from "react";
+import "../Nav/style.css";
 
-class Nav extends React.Component {
-  state = {};
+class Nav extends Component {
+  state = {
+  };
   render() {
     return (
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-light bg-success">
+        <a className="navbar-brand" href="/">
           Click-Game
         </a>
+        <span><h5>{this.props.message}</h5></span>
+        <div className="scorecard">
+          <h4>Score: {this.props.score} | High Score: {this.props.highScore}</h4>
+        </div>
       </nav>
     );
   }

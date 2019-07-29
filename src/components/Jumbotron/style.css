@@ -1,0 +1,7 @@
+.jumbotron {
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/17/21/30/wild-flowers-571940_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: yellow;
+}
