@@ -41,8 +41,10 @@ class App extends Component {
     else if (this.state.score === 12) {
       this.setState({
         msg: 'You win!',
+        score: 0,
         chosen: [],
       });
+      this.handleReset()
     }
     this.shuffleCards();
   };
@@ -52,7 +54,8 @@ class App extends Component {
       score: 0,
       highScore: this.state.highScore,
       message: "Click one of the cards to begin!",
-      chosen: []
+      chosen: [],
+      sessionOver: false
     });
     this.shuffleCards();
   }
