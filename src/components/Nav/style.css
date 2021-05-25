@@ -1,3 +1,19 @@
-.navbar-brand {
+nav {
+    background-color: grey;
     color: white;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+
+span {
+    margin-left: 9rem;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: block;
+    }
 }

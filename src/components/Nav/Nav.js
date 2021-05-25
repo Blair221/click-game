@@ -6,7 +6,7 @@ class Nav extends Component {
   };
   render() {
     return (
-      <nav className="navbar navbar-light bg-success">
+      <nav className="navbar navbar-light">
         <a className="navbar-brand" href="/">
           Click-Game
         </a>
